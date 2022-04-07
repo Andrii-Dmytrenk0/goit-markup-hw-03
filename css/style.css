@@ -21,6 +21,9 @@ body {
 .title-h3 {
   color: var(--primiry-text-color);
 }
+h1, h2, h3, h4,h5,h6{
+  margin: 0;
+}
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
 /* цвет для h1 #FFFFFF */
@@ -29,6 +32,12 @@ body {
 
 /* Header */
 /* logo */
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* background-color: tomato; */
+}
 .logo {
   color: var(--acent-color);
   text-decoration: none;
@@ -106,10 +115,11 @@ body {
   font-size: 16px;
   line-height: 1.8;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: inline-block;
   letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 /* hang-section */
 .list-items {

@@ -48,21 +48,26 @@ button{
 /* цвет для h1 #FFFFFF */
 /* acent #2196F3 */
 /* адресс футера rgba(255, 255, 255, 0.6); */
-
-/* Header */
-/* logo */
-.container{
-  width: 1200px;
+.container {
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   border: tomato 1px solid;
 }
+/* Header */
+/* logo */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .section{
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .logo {
   color: var(--acent-color);
   text-decoration: none;
@@ -82,16 +87,31 @@ button{
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  margin-right: 93px;
 }
 /* site-nav */
 .nav-list {
+  display: flex;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.list-link{
+  margin-right: 50px;
+}
+.list-link:last-child{
+  margin-right: 0;
+}
 .nav-link {
   color: var(--primiry-text-color);
+
+  display: block;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .current {
   color: var(--acent-color);
@@ -102,13 +122,21 @@ button{
 }
 /* contact-nav */
 .nav-contact {
+  display: flex;
+  margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.nav-contact li{
+  margin-right: 50px;
+}
 .contact-link {
   color: var(--title-text-color);
+}
+.nav-contact li:last-child{
+  margin-right: 0;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -151,6 +179,16 @@ button{
   min-width: 200px;
 }
 /* hang-section */
+.hang-list{
+  display: flex;
+}
+.main-hang-list{
+  margin-left: 30px;
+  max-width: 270px;
+}
+.main-hang-list:first-child{
+  margin-left: 0;
+}
 .list-items {
   color: var(--primiry-text-color);
 
@@ -181,7 +219,16 @@ button{
 
   margin-bottom: 50px;
 }
-/* my-team section */
+.examples-list{
+  display: flex;
+}
+.pic-list{
+  margin-left: 30px;
+}
+.pic-list:first-child{
+  margin-left: 0;
+}
+/* My team */
 .team-title {
   color: var(--primiry-text-color);
 
@@ -192,6 +239,15 @@ button{
   letter-spacing: 0.03em;
 
   margin-bottom: 50px;
+}
+.team-list{
+  display: flex;
+}
+.worker{
+  margin-left: 30px;
+}
+.worker:first-child{
+  margin-left: 0;
 }
 .my-team{
   background-color: var(--background-porfolio-botton);
@@ -297,7 +353,29 @@ font-style: normal;
   background-color: var(--acent-color);
   color: var(--h1-text-color);
 }
+.filter-list{
+  display: flex;
+  justify-content: center;
+}
+.button-list{
+  margin-left: 8px;
+}
+.button-list:first-child{
+  margin-left: 0;
+}
 /* services */
+.list-services{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-self: space-between; */
+}
+.services{
+  margin-right: 30px;
+}
+.services:nth-child(3n){
+  margin-right: 0;
+}
 .services-title {
   color: var(--primiry-text-color);
 

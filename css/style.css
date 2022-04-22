@@ -56,7 +56,22 @@ button{
   margin-right: auto;
   border: tomato 1px solid;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* Header */
+.line-header{
+  border-bottom: 1px solid #ECECEC;
+}
 /* logo */
 .header{
   display: flex;
@@ -181,6 +196,7 @@ button{
 /* hang-section */
 .hang-list{
   display: flex;
+  justify-content: center;
 }
 .main-hang-list{
   margin-left: 30px;
@@ -221,6 +237,7 @@ button{
 }
 .examples-list{
   display: flex;
+  justify-content: center;
 }
 .pic-list{
   margin-left: 30px;
@@ -242,6 +259,7 @@ button{
 }
 .team-list{
   display: flex;
+  justify-content: center;
 }
 .worker{
   margin-left: 30px;
@@ -368,10 +386,12 @@ font-style: normal;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  /* justify-self: space-between; */
+  justify-content: center;
 }
 .services{
   margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #EEEEEE;
 }
 .services:nth-child(3n){
   margin-right: 0;

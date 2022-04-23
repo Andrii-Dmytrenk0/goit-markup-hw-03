@@ -40,6 +40,11 @@ ul{
 p {
   margin: 0;
 }
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 button{
   border: 1px solid transparent;
 }
@@ -49,12 +54,11 @@ button{
 /* acent #2196F3 */
 /* адресс футера rgba(255, 255, 255, 0.6); */
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  border: tomato 1px solid;
 }
 .visually-hidden {
   position: absolute;
@@ -224,6 +228,9 @@ button{
   letter-spacing: 0.03em;
 }
 /* examples-section */
+.examples {
+  padding-top: 0;
+}
 .examples-title {
   color: var(--primiry-text-color);
 
@@ -245,6 +252,7 @@ button{
 .pic-list:first-child{
   margin-left: 0;
 }
+
 /* My team */
 .team-title {
   color: var(--primiry-text-color);
@@ -287,6 +295,10 @@ button{
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.worker-title{ 
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* footer */
 .footer {
@@ -386,12 +398,10 @@ font-style: normal;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .services{
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #EEEEEE;
 }
 .services:nth-child(3n){
   margin-right: 0;
@@ -412,3 +422,14 @@ font-style: normal;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
+.services-block{
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+}
+
